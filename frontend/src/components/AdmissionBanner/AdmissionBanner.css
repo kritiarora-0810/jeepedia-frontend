@@ -1,0 +1,42 @@
+/* AdmissionBanner.css */
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffedd5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  
+  .banner-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5d5340;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    
+  }
+  
+  .start-button {
+    background-color: #f97316;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    padding: 10px 15px;
+    border-radius: 5px; 
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  .banner-image {
+    height: 8rem;
+    
+  }
+  

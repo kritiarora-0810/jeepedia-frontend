@@ -1,0 +1,120 @@
+
+
+/* Footer container */
+.footer {
+    width: 100%;
+    background-color: #413a2e;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  /* Inner container */
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* Responsive grid */
+  @media (min-width: 768px) {
+    .footer-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Footer sections */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Text styling */
+  .footer-text {
+    color: #cbd5e1;
+    font-size: 14px;
+  }
+  
+  /* Email subscription */
+  .footer-subscribe {
+    display: flex;
+  }
+  
+  .footer-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #6a655c;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .footer-button {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .footer-button:hover {
+    background-color: #ea580c;
+  }
+  
+  /* Footer lists */
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: #cbd5e1;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 3px;
+  }
+  
+  .footer-link:hover {
+    color: white;
+  }
+  
+  /* Contact details */
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+  }
+  
+  /* Bottom footer */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #6a655c;
+    color: #cbd5e1;
+    font-size: 14px;
+  }
+  
+  .footer-made {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .footer-heart {
+    color: red;
+  }
+  

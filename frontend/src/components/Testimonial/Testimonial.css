@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.testimonial-container {
+  text-align: center;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  background: white;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #f97316;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+.testimonial-wrapper {
+  width: 60%;
+  position: relative;
+  height: 200px;
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(244, 148, 5, 0.914);
+  transition: 0.1s ease-in-out;
+  position: absolute;
+  height: auto;
+  width: 100%;
+}
+
+.testimonial-card p {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.quote {
+  font-size: 30px;
+  color: #f97316
+}
+
+.role {
+  color: #f97316;
+  font-weight: 600;
+}
+
+.name {
+  color: white;
+}
+
+.avatars {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+.active-avatar {
+  border-color: #f97316;
+  box-shadow: 0 0 25px rgba(244, 148, 5, 0.914);
+}
