@@ -20,7 +20,7 @@ const PostDetail = () => {
     const fetchPost = async () => {
       try {
         const response = await fetch(
-          `http://127.0.0.1:8000/community/get_post_by_slug/?slug=${postSlug}`,
+          `https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/get_post_by_slug/?slug=${postSlug}`,
           {
             method: 'GET',
             headers: {
@@ -59,7 +59,7 @@ const PostDetail = () => {
 
 
       const response = await fetch(
-        `http://127.0.0.1:8000/community/toggle_like_view/${post.id}/`,
+        `https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/toggle_like_view/${post.id}/`,
         {
           method: 'POST',
           headers: {
@@ -88,7 +88,7 @@ const PostDetail = () => {
     try {
       setIsCommenting(true);
       const response = await fetch(
-        `http://127.0.0.1:8000/community/create_comment_view/${post.id}/`,
+        `https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/create_comment_view/${post.id}/`,
         {
           method: 'POST',
           headers: {
@@ -131,7 +131,7 @@ const PostDetail = () => {
     try {
       setIsReplying(true);
       const response = await fetch(
-        `http://127.0.0.1:8000/community/create_reply/${commentId}/`,
+        `https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/create_reply/${commentId}/`,
         {
           method: 'POST',
           headers: {

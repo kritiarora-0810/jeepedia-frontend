@@ -33,7 +33,7 @@ const NewPost = ({ onClose, onPostCreated }) => {
     }
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/community/create_post/', {
+      const response = await fetch('https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/create_post/', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
