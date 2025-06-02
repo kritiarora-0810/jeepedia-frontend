@@ -248,7 +248,7 @@ const PostDetail = () => {
         {/* Post Image */}
         {post.image && (
           <motion.img
-            src={`http://localhost:8000${post.image}`}
+            src={`https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app${post.image}`}
             alt={post.title}
             className="w-full h-96 object-cover rounded-xl mb-8 shadow-md"
             whileHover={{ scale: 1.02 }}

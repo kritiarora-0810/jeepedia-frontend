@@ -53,7 +53,7 @@ export default function ContactUs() {
       formDataToSend.append('subject', formData.subject);
       formDataToSend.append('message', formData.message);
 
-      const response = await fetch('http://localhost:8000/feedback/contact_us/', {
+      const response = await fetch('https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/feedback/contact_us/', {
         method: 'POST',
         body: formDataToSend,
       });

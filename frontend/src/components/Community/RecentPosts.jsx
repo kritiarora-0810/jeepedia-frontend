@@ -68,7 +68,7 @@ const RecentPosts = ({ searchQuery, onPostSelect }) => {
               </div>
 
               {post.image && (
-                <img src={`http://localhost:8000${post.image}`} className="w-full h-48 object-cover rounded-xl mt-4 mb-6" alt={post.title} />
+                <img src={`https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app${post.image}`} className="w-full h-48 object-cover rounded-xl mt-4 mb-6" alt={post.title} />
               )}
 
               <div className="flex items-center gap-6 text-[#50483b]/80">
