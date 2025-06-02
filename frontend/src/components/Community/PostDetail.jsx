@@ -20,7 +20,7 @@ const PostDetail = () => {
     const fetchPost = async () => {
       try {
         const response = await fetch(
-          `https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/get_post_by_slug/?slug=${postSlug}`,
+          `http://127.0.0.1:8000/community/get_post_by_slug/?slug=${postSlug}`,
           {
             method: 'GET',
             headers: {
@@ -59,7 +59,7 @@ const PostDetail = () => {
 
 
       const response = await fetch(
-        `https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/toggle_like_view/${post.id}/`,
+        `http://127.0.0.1:8000/community/toggle_like_view/${post.id}/`,
         {
           method: 'POST',
           headers: {
@@ -88,7 +88,7 @@ const PostDetail = () => {
     try {
       setIsCommenting(true);
       const response = await fetch(
-        `https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/create_comment_view/${post.id}/`,
+        `http://127.0.0.1:8000/community/create_comment_view/${post.id}/`,
         {
           method: 'POST',
           headers: {
@@ -131,7 +131,7 @@ const PostDetail = () => {
     try {
       setIsReplying(true);
       const response = await fetch(
-        `https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/create_reply/${commentId}/`,
+        `http://127.0.0.1:8000/community/create_reply/${commentId}/`,
         {
           method: 'POST',
           headers: {
@@ -248,7 +248,7 @@ const PostDetail = () => {
         {/* Post Image */}
         {post.image && (
           <motion.img
-            src={`https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app${post.image}`}
+            src={`http://localhost:8000${post.image}`}
             alt={post.title}
             className="w-full h-96 object-cover rounded-xl mb-8 shadow-md"
             whileHover={{ scale: 1.02 }}

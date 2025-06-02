@@ -22,7 +22,7 @@ const RecentPosts = ({ searchQuery, onPostSelect }) => {
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch('https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/community/get_all_posts/', {
+        const response = await fetch('http://127.0.0.1:8000/community/get_all_posts/', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -68,7 +68,7 @@ const RecentPosts = ({ searchQuery, onPostSelect }) => {
               </div>
 
               {post.image && (
-                <img src={`https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app${post.image}`} className="w-full h-48 object-cover rounded-xl mt-4 mb-6" alt={post.title} />
+                <img src={`http://localhost:8000${post.image}`} className="w-full h-48 object-cover rounded-xl mt-4 mb-6" alt={post.title} />
               )}
 
               <div className="flex items-center gap-6 text-[#50483b]/80">

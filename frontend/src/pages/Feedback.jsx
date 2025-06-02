@@ -72,7 +72,7 @@ const FeedbackForm = () => {
         throw new Error('Please login to submit feedback');
       }
 
-      const API_URL = 'https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/';
+      const API_URL = 'http://127.0.0.1:8000';
       
       // Create FormData object
       const formData = new FormData();

@@ -155,7 +155,7 @@ const JeeRankPredictor = () => {
     };
 
     try {
-      const response = await fetch('https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/jeepedia/llm_prediction/', {
+      const response = await fetch('http://localhost:8000/jeepedia/llm_prediction/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -191,7 +191,7 @@ const JeeRankPredictor = () => {
 
     setIsComparing(true);
     try {
-      const response = await fetch('https://3a49-2405-201-5016-709a-a563-54ee-e3e7-9a63.ngrok-free.app/jeepedia/compare_predicted/', {
+      const response = await fetch('http://localhost:8000/jeepedia/compare_predicted/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
